@@ -4,7 +4,8 @@ main.dvi: main.tex \
 	1_intro.tex 2_measurement.tex 3_data.tex 4_processing.tex\
        Figs/samples.eps Figs/cod.eps Figs/fig3.eps Figs/ut_setup.eps Figs/samples.svgz Figs/map.eps \
        Figs/Ascans.eps Figs/Bscan_Q.eps Figs/Bscan_K.eps Figs/Bscan_N.eps \
-       Figs/cp_mean_f.eps Figs/hist_Q.eps Figs/hist_N.eps Figs/hist_K.eps
+       Figs/cp_mean_f.eps Figs/hist_Q.eps Figs/hist_N.eps Figs/hist_K.eps Figs/hist_all.eps \
+       Figs/hist_all.eps Figs/monocrystal.eps
 	platex main.tex
 Figs/samples.eps: Figs/samples.svgz
 	inkscape -z -f Figs/samples.svgz -E Figs/samples.eps
@@ -32,3 +33,9 @@ Figs/hist_N.eps: Figs/hist_N.svgz
 	inkscape -z -f Figs/hist_N.svgz -E Figs/hist_N.eps
 Figs/hist_K.eps: Figs/hist_K.svgz
 	inkscape -z -f Figs/hist_K.svgz -E Figs/hist_K.eps
+Figs/hist_all.eps: Figs/hist_all.svgz
+	inkscape -z -f Figs/hist_all.svgz -E Figs/hist_all.eps
+Figs/hist_all.eps: Figs/hist_all.svgz
+	inkscape -z -f Figs/hist_all.svgz -E Figs/hist_all.eps
+Figs/monocrystal.eps: Figs/monocrystal.svgz
+	inkscape -z -f Figs/monocrystal.svgz -E Figs/monocrystal.eps
