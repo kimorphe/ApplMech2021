@@ -115,21 +115,75 @@ $c_{p,m}^{(\alpha)}$と表記し，鉱物種$\alpha$に対する波形データ�
 %
 \subsection{位相速度の頻度分布}
 $\left\{ c^{(\alpha)}_{p,m}\right\}$の頻度分布を図\ref{fig:fig10}$\sim$図\ref{fig:fig12}に示す．
-これらの図は横軸を周波数，縦軸は位相速度$c^{(\alpha)}_{p,mn}$をとり，
-頻度をカラー表示したもので，白の実線は図\ref{fig:fig9}に示した平均位相速度$\left<c^{(\alpha)}_p\right>$
+これらは横軸を周波数，縦軸を位相速度$c^{(\alpha)}_{p,mn}$にとり，頻度をカラー表示したものである．
+白の実線は図\ref{fig:fig9}に示した平均位相速度$\left<c^{(\alpha)}_p\right>$
 と周波数の関係を再掲したものである．これらの結果を見ると，位相速度の頻度分布は周波数によって
-大きく変化しないことが分かる。これに対して，鉱物種によって頻度分布は大きく異なっている．
-図\ref{fig:fig10}に示した石英に対する結果では、位相速度の分布は平均値周辺に集中している．
-一方，ナトリウム長石とカリ長石では位相速度は広い範囲に分布しており、複数のピークがある。
-特にカリ長石の場合、頻度分布は上下に非対称で4$\sim$7[km/s]に渡る非常に広い分布となっている。
+大きく変化しないことが分かる。一方，頻度分布の形状は鉱物種によって大きく異なっている．
+図\ref{fig:fig10}に示した石英に対する結果では位相速度の分布は平均値周辺に集中している．
+これに対して，ナトリウム長石とカリ長石では位相速度は広い範囲に分布しており複数のピークが現れている．
+特に，カリ長石の場合、頻度分布は上下に非対称で4$\sim$7[km/s]に渡る非常に広い分布となっている。
 鉱物種による分布の差をより明確に示すために，周波数$f$=1.0$\sim$2.0[MHz]の全ての周波数で
 得られた位相速度
 \[
 	\left\{ c_{p,m}^{(\alpha)}(\omega)\left| m=0,\dots N_\alpha ,\ 1.0\leq f \leq 2.0[{\rm MHz}], \right.\right\}
 \]
-について計算した頻度分布を図\ref{fig:fig13}に示す．
-この結果では、石英、ナトリウム長石は平均値に対して概ね対称な分布で、
-カリ長石だけが非対称な幅の広い分布になっている。また、
+に対する頻度分布を図\ref{fig:fig13}に示す．
+この図にあるように，石英とナトリウム長石は概ね対称な分布である一方、
+カリ長石だけが非対称な幅の広く，これらの3つの分布について平均と
+標準偏差は表\ref{tbl:tbl1}のようになる．
+\begin{table}[htb]
+	\caption{縦波位相速度の平均と標準偏差[km/s]}
+  \begin{tabular}{c||c|c|c|c}
+	  鉱物種 & 石英 & Na長石 & カリ長石 & 全データ\\
+	  \hline
+	  平均 & 5.37 & 5.53 & 5.41 & 5.43  \\
+	  \hline
+	  標準偏差 & 0.44 & 0.56 & 0.90 & 0.70  \\
+  \end{tabular}
+\label{tbl:tbl1}
+\end{table}
+なお，表\ref{tbl:tbl1}で，全データとは3つの鉱物種について得られた
+全ての位相速度に対する平均と標準偏差を意味する．\\
+
+ここで，実験で得られた位相速度$c_p^{(\alpha)}$と文献値から求めた
+鉱物単結晶の位相速度$v$の比較を行う．
+単結晶鉱物の位相速度は文献に与えられた弾性係数$C_{ijkl}$と
+密度$\rho$を用い，Christoffelの方程式を解くことによって求める．
+Christoffelの方程式は，平面波の振動および進行方向を表す単位ベクトル
+をそれぞれ
+\begin{equation}
+	\fat{d}=(d_1,\, d_2,\, d_3), \ \ 
+	\fat{p}=(p_1,\, p_2,\, p_3)
+	\label{eqn:unit_vecs}
+\end{equation}
+とすれば、次のように表すことができる．
+\begin{equation}
+	\left( C_{ijkl}p_j p_l - \rho v^2 \delta_{ik} \right)d_k=0
+	\label{eqn:Christoffel}
+\end{equation}
+ここでインデックスの範囲は1,2,3とし，$\delta_{ik}$はクロネッカーデルタを
+表す．
+式(\ref{eqn:Christoffel})を与えられた進行方向ベクトル$\fat{p}$
+に対して解くことで，$\fat{p}$方向への疑似縦波と疑似横波の
+位相速度$v$を求めることができる．ここでは，$\fat{p}$を
+\begin{equation}
+	\fat{p}=\left(
+		\sin\theta \cos\phi, \,
+		\sin\theta \sin\phi, \,
+		\cos\theta
+	\right)
+	\label{eqn:p_polar}
+\end{equation}
+球座標表示し，
+\begin{equation}
+	0 \leq \theta \leq \pi, \ \ 
+	0 \leq \phi \leq 2\pi
+	\label{eqn:}
+\end{equation}
+の範囲において，$v(\theta, \phi)$を1度刻みで求めた．
+図\ref{fig:***}は，その結果を立体角$\Delta \Omega = \sin\theta \Delta \theta \Delta phi$
+で重み付けした頻度分布として示したものである．これらは，多数の単結晶が一様な方位分布をもつと
+仮定したときの，縦波位相速度の分布を表す．
 ナトリウム長石とカリ長石は多峰的であることが、石英と異なる点の一つ。
 次に、比較を行うため、文献値を用いて計算した位相速度の頻度分布を
 図\ref{fig:fig14}に示す。
@@ -174,42 +228,8 @@ $C_{ijkl}$は弾性係数テンソル，$\fat{n}=(n_1,n_2,n_3)$は伝播方向�
 %
 %
 %
-ここで，実験で得られた位相速度$c_p^{(\alpha)}$と単結晶の位相速度$v$の比較を行う．
-単結晶の位相速度の計算には，文献に与えられた弾性係数$C_{ijkl}$と密度$\rho$
-を用い，Christoffelの方程式を解くことによって求める．
-Christoffelの方程式は，平面波の振動および進行方向を表す単位ベクトルを
-それぞれ
-\begin{equation}
-	\fat{d}=(d_1,\, d_2,\, d_3), \ \ 
-	\fat{p}=(p_1,\, p_2,\, p_3)
-	\label{eqn:unit_vecs}
-\end{equation}
-とすれば、次のように表すことができる．
-\begin{equation}
-	\left( C_{ijkl}p_j p_k - \rho v^2 \right)d_k=0
-	\label{eqn:Christoffel}
-\end{equation}
-式(\ref{eqn:Christoffel})を与えられた進行方向ベクトル$\fat{p}$
-に対して解くことで，$\fat{p}$方向への疑似縦波と疑似横波の
-位相速度$v$を求めることができる．ここでは，$\fat{p}$を
-\begin{equation}
-	\fat{p}=\left(
-		\sin\theta \cos\phi, \,
-		\sin\theta \sin\phi, \,
-		\cos\theta
-	\right)
-	\label{eqn:p_polar}
-\end{equation}
-球座標表示し，
-\begin{equation}
-	0 \leq \theta \leq \pi, \ \ 
-	0 \leq \phi \leq 2\pi
-	\label{eqn:}
-\end{equation}
-の範囲において，$v(\theta, \phi)$を1度刻みで求めた．
-図\ref{fig:***}は，その結果を立体角$\Delta \Omega = \sin\theta \Delta \theta \Delta phi$
-で重み付けした頻度分布として示したものである．これらは，多数の単結晶が一様な方位分布をもつと
-仮定したときの，縦波位相速度の分布を表す．
+
+
 実験で求めた鉱物粒の位相速度$c^{(\alpha)}_p$と単結晶の位相速度分布を比較すると，
 単結晶の位相速度は花崗岩の鉱物粒に対する結果よりも平均的に大きな値を取ることが分かる。
 これは，花崗岩では鉱物粒に含まれるマイクロクラックによって軟化し，理想的な単結晶よりも
