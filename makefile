@@ -1,11 +1,13 @@
 main.pdf: main.dvi
 	dvipdfmx -p a4 main.dvi
 main.dvi: main.tex \
-	1_intro.tex 2_measurement.tex 3_data.tex 4_processing.tex\
+	1_intro.tex 2_measurement.tex 3_data.tex 4_processing.tex 5_fdm.tex\
        Figs/samples.eps Figs/cod.eps Figs/fig3.eps Figs/ut_setup.eps Figs/samples.svgz Figs/map.eps \
        Figs/Ascans.eps Figs/Bscan_Q.eps Figs/Bscan_K.eps Figs/Bscan_N.eps \
        Figs/cp_mean_f.eps Figs/hist_Q.eps Figs/hist_N.eps Figs/hist_K.eps Figs/hist_all.eps \
-       Figs/hist_all.eps Figs/monocrystal.eps
+       Figs/hist_all.eps Figs/monocrystal.eps \
+       Figs/model.eps Figs/decay.eps Figs/field.eps
+
 	platex main.tex
 Figs/samples.eps: Figs/samples.svgz
 	inkscape -z -f Figs/samples.svgz -E Figs/samples.eps
@@ -35,7 +37,13 @@ Figs/hist_K.eps: Figs/hist_K.svgz
 	inkscape -z -f Figs/hist_K.svgz -E Figs/hist_K.eps
 Figs/hist_all.eps: Figs/hist_all.svgz
 	inkscape -z -f Figs/hist_all.svgz -E Figs/hist_all.eps
-Figs/hist_all.eps: Figs/hist_all.svgz
-	inkscape -z -f Figs/hist_all.svgz -E Figs/hist_all.eps
+#Figs/hist_all.eps: Figs/hist_all.svgz
+#	inkscape -z -f Figs/hist_all.svgz -E Figs/hist_all.eps
 Figs/monocrystal.eps: Figs/monocrystal.svgz
 	inkscape -z -f Figs/monocrystal.svgz -E Figs/monocrystal.eps
+Figs/field.eps: Figs/field.svgz
+	inkscape -z -f Figs/field.svgz -E Figs/field.eps
+Figs/model.eps: Figs/model.svgz
+	inkscape -z -f Figs/model.svgz -E Figs/model.eps
+Figs/decay.eps: Figs/decay.svgz
+	inkscape -z -f Figs/decay.svgz -E Figs/decay.eps
