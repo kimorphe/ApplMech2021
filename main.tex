@@ -43,7 +43,9 @@ ELASTIC WAVE PROPAGATION IN A GRANITE AT A SCALE OF ROCK FORMING MINERAL GRAINS
 % emailアドレスを公開される方は，
 %% \thanks{○○○○○○\email{your_name@foo.ac.jp}}のようにしてください．
 %
-\author{木本　和志\thanks{正会員 博士(工学) 岡山大学 環境生命科学研究科(〒700-8530 岡山県岡山市北区3丁目1番地1号)\email{kimoto@okayama-u.ac.jp} (Corresponding Author)}・
+\author{木本　和志\thanks{正会員 博士(工学) 
+岡山大学 学術研究院環境生命科学学域
+(〒700-8530 岡山県岡山市北区3丁目1番地1号)\email{kimoto@okayama-u.ac.jp} (Corresponding Author)}・
 岡野　蒼\thanks{学生会員 岡山大学環境生命科学研究科 (〒700-8530 岡山県岡山市北区3丁目1番地1号)}・
 斎藤　隆泰\thanks{正会員 博士(工学)群馬大学大学院理工学府 環境創生部門(〒376-8515 群馬県桐生市天神町 1-5-1)}
 %佐藤　忠信\thanks{正会員 博士(工学)神戸学院大学・現代社会学部・防災社会学科(〒650-8586神戸市中央区港島1-1-3)}・
@@ -56,14 +58,14 @@ ELASTIC WAVE PROPAGATION IN A GRANITE AT A SCALE OF ROCK FORMING MINERAL GRAINS
 %
 \abstract{
 \small
-本研究は，花崗岩におけるP波の局所的な伝播挙動を調べたものである．具体的には，花崗岩片を供試体に用いた実験で，造岩鉱物粒スケールでの位相速度を推定することを目的に，供試体板厚方向に透過する縦波をレーザードップラー振動計でスキャンした計測を行った．位相速度の評価は別途取得した参照波形との位相差に基づいて行い，得られた位相速度を造岩鉱物毎に統計的に処理して頻度分布を求めた．その結果，カリ長石の位相速度は，非対称かつ幅の広い分布に従う一方，石英の位相速度は対称かつより狭い分布に従うことが分かった．さらに，以上で得た頻度分布を用いて花崗岩の2次元数値解析モデルを作成して平面波伝播解析を行ったところ，ガウス分布によって摂動された位相速度を持つ解析モデルに対して得られるものとは異なる，特異な散乱減衰の挙動が現れることが示された．
+本研究は，花崗岩における縦波の局所的な伝播挙動を調べたものである．具体的には，造岩鉱物粒スケールでの位相速度を推定することを目的に，花崗岩供試体の板厚方向に透過する縦波をレーザードップラー振動計で計測を行った．位相速度の評価は別途取得した参照波形と透過波形の位相差に基づいて行い，得られた位相速度を造岩鉱物種毎に統計的に処理して頻度分布を求めた．その結果，カリ長石の位相速度は非対称かつ幅の広い分布に従う一方，石英の位相速度は対称かつより狭い分布に従うことが分かった．さらに，以上で得た頻度分布を用いて花崗岩の2次元数値解析モデルを作成して平面波伝播解析を行ったところ，ガウス分布によって摂動された位相速度分布を与えた解析モデルとは異なる，特異な散乱減衰の挙動が現れることが示された．
 }
 %
 \keywords{granite, rock-forming mineral, ultrasonic wave, phase velocity, probability density}
 %
 \endabstract{% Yes blank line
 \normalsize
-This study investigates the propagation characteristics of P-wave in granite. Specifically, the local phase velocity is evaluated experimentally　using a granite plate. In the experiment, ultrasonic P-waves transmitted in the thickness direction are measured by scanning the plate surface with a laser Doppler vibrometer. The phase velocity is evaluated based on the phase delay relative to an independently measured reference signal. The phase velocity data obtained thus are processed statistically to produce probability density functions for each rock-forming mineral species. As a result, a highly asymmetric and broad probability density function (PDF) is obtained for the P-wave velocity of potassium feldspar, while the PDF for quartz is found to be symmetric and much narrower. Finally, the PDFs are used to generate 2-dimensional numerical models of granite on which plane wave propagation analyses are performed. The numerical results showed that the phase velocity field perturbed according to the experimentally obtained PDFs gives a peculiar decay profile compared to the Gaussian perturbed models.
+This study investigates the propagation characteristics of P-wave in granite. Specifically, the local phase velocity is evaluated experimentally using a granite plate. In the experiment, ultrasonic P-waves transmitted in the thickness direction are measured by scanning the plate surface with a laser Doppler vibrometer. The phase velocity is evaluated based on the phase delay relative to an independently measured reference signal. The phase velocity data obtained thus are processed statistically to produce probability density functions for each rock-forming mineral species. As a result, a highly asymmetric and broad probability density function (PDF) is obtained for the P-wave velocity of potassium feldspar, while the PDF for quartz is found to be symmetric and much narrower. Finally, the PDFs are used to generate 2-dimensional numerical models of granite on which plane wave propagation analyses are performed. The numerical results showed that the phase velocity field perturbed according to the experimentally obtained PDFs gives a peculiar decay profile compared to the Gaussian perturbed models.
 }
 %
 % \titlepagecontrol{1}
@@ -88,45 +90,44 @@ This study investigates the propagation characteristics of P-wave in granite. Sp
 \section{非均質媒体モデルによる波動伝播解析}
 	\input{5_fdm}
 \section{まとめ}
-本研究では，花崗岩の鉱物粒スケールでの縦波位相速度を超音波計測を行って推定した．
-その結果，実験に用いた花崗岩供試体の主要造岩鉱物である石英，ナトリウム長石，
-カリ長石のそれぞれについて，位相速度の頻度分布を得た．これらの頻度分布の平均値は，
-鉱物種による差が小さくいずれも5.4[km/s]程度と典型的な花崗岩の位相速度に近い値を取り，
-周波数1MHzから2MHz程度の帯域ではほとんど速度分散も無いことがわかった．
-一方，頻度分布の形状や幅は鉱物種によって大きく異なり，次のような特徴があることが
-明らかとなった．
+本研究では，花崗岩の鉱物粒スケールのおける縦波位相速度を，局所的な超音波計測よって推定した．
+その結果，実験に用いた花崗岩供試体の主要造岩鉱物である，石英，ナトリウム長石，カリ長石の
+それぞれについて，位相速度の頻度分布を得た．これらの頻度分布の平均値は鉱物種による差が小さく，
+いずれも5.4[km/s]程度と典型的な花崗岩の位相速度に近い値をとり，周波数1MHzから2MHz程度の帯域
+ではほとんど速度分散も無いことが分かった．一方，頻度分布の形状や分布幅は鉱物種によって大きく異なり，
+次のような特徴があることが明らかとなった．
 \begin{itemize}
 \item
-石英の位相速度は平均値周辺に集中した対称な頻度分布を持つ．
+石英の位相速度は，平均値周辺に集中した対称な頻度分布を持つ．
 \item
-カリ長石の位相速度は標準偏差が0.9[km/s]とばらつきが大きく非対称な頻度分布を示す. 
+カリ長石の位相速度は，標準偏差が0.9[km/s]と大きく非対称な頻度分布を持つ. 
 \item
-ナトリウム長石の位相速度は，複数のピークをもつ頻度分布を描き分布幅は
-石英とカリ長石の中間の値となる．
+ナトリウム長石の位相速度は，複数のピークをもつ頻度分布を描き，分布幅は
+石英とカリ長石の中間程度の値となる．
 \end{itemize}
-また，以上の結果を，文献に与えられた単結晶鉱物の弾性係数から計算した位相速度と比較することで，
-花崗岩中の鉱物はマイクロクラックの影響を受け，位相速度は無欠陥の単結晶の
-ものよりも小さな値を取ることが確認された．一方，分布幅の点では、石英は
-単結晶の場合よりも花崗岩中のものは頻度分布の分散は小さく，き裂の存在が異方性を
-弱める方向に寄与している．これに対してカリ長石の場合、単結晶と同様、位相速度の頻度分布幅は
-広く、き裂の存在下でも強い異方性を示すことがわかった．
-このような鉱物種に応じて位相速度が波動伝播に与える影響を調べることを目的に、
-本研究では花崗岩を模擬した多結晶質体モデルを作成し、2次元波動伝播解析を行った。
-波動解析によって得られた速度場から散乱減衰の挙動を調べたところ、
-鉱物種毎に位相速度が従う統計分布を設定した場合とそうで無い場合に，減衰率の
-挙動い違いが生じることが分かった．
+以上の結果を，文献に与えられた単結晶鉱物の弾性係数から計算した位相速度と比較する
+ことで，花崗岩中の鉱物粒はマイクロクラックの影響により，位相速度がき裂の無い単結晶
+に比べて明らかに小さな値を取ることを確認した．一方，分布幅に関して言えば，
+単結晶に比べて花崗岩中の石英は頻度分布の分散が小さく，き裂の存在が異方性を
+弱める方向に寄与している可能性があることが分かった．さらに，カリ長石は，単結晶
+同様，位相速度の頻度分布幅が広く，き裂の存在下でも強い異方性を示すことを明らか
+とすることができた．最後に，これら鉱物種に応じた位相速度の頻度分布を考慮して
+波動伝播解析を行ったところ，位相速度が単一のガウス分布に従うと仮定した
+場合とは異なる散乱減衰挙動が見られることが分かった．
 このことは，花崗岩のような複数の鉱物から構成される非均質媒体を伝わる弾性波の
-挙動を詳しく調べるためには、構成鉱物毎に位相速度あるいは弾性係数が従う確率分布を
-与えた解析が必要となることを意味する。逆に言えば、花崗岩中を伝播する弾性波
-は鉱物組成に反応すると言え，両者の詳しい関係を知ることができれば、弾性波計測結果から
-粒径分布やき裂の量を推定する非破壊検査法として利用できる可能性がある．
-こういった利用方法を今後実現していくためには、供試体の劣化による位相速度分布の変化を
-調べることや、横波についても同様な計測と位相速度分布の推定を行うことが課題となる。
-また、位相速度が従う確率分布をある程度限定することができれば，波動伝播挙動のどのような
-側面に確率分布の特徴が強く影響するかを数値シミュレーションによって特定することが次の課題となる．
-岩石を始めとする複雑なランダム不均質媒体の弾性波試験をより定量的かつ信頼性の高いものに
-していくためには，これらの取り組みを両輪として進めていくことが重要と考えられ，
-本研究はそのような取り組みの一つとして位置づけることのできるものである。
+挙動を詳しく調べるためには，構成鉱物毎に位相速度あるいは弾性係数が従う確率分布を
+与えた解析が必要となることを示していると考えられる．
+%逆に言えば，花崗岩中を伝播する弾性波
+%は鉱物組成に反応すると言え，両者の詳しい関係を知ることができれば，弾性波計測結果から
+%粒径分布やき裂の量を推定する非破壊検査法として利用できる可能性がある．
+%こういった利用方法を
+今後は，供試体の劣化による位相速度分布の変化を実験的に調べることや，
+横波についても同様な計測と位相速度分布の推定を行うことが課題となる．
+また，波動伝播挙動のどのような側面に位相速度の確率分布の特徴が反映されるかを，
+数値シミュレーションによって特定することも重要な課題の一つとなる．
+これらを両輪として研究を行うことが，岩石を始めとする複雑なランダム不均質媒体の弾性波試験を
+より定量的かつ信頼性の高いものにしていくにあたって重要と考えられ，
+本研究はそのような取り組みの一環として位置づけられるものと言える．
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \\
 
@@ -154,6 +155,46 @@ This study investigates the propagation characteristics of P-wave in granite. Sp
 \bibitem{Griffiths}
 	Griffiths, L., Lengline, O., Heap, M.,J., Baud, P., and Schmittbuhl, J.: Thermal cracking in Westerly granite monitored
 	using direct wave velocity, coda wave interferometry and acoustic emissions, {\it JGR Solid Earth}, Vol.123, No.3, pp.2246-2261, 2018.
+\bibitem{Sato}
+	Sato, H., Fehler, M.C., and Maeda, T.:Seismic wave propagation and scattering in the heterogeneous earth, 
+	Springer, 2012.
+\bibitem{FEM}
+	Pamel, A., V., Sha, G., Rokhlin, S., I., and Lowe, M., J., S.:
+	Finite-element modelling of elastic wave propagation and scattering within heterogeneous media, 
+	{\it Proc. R. Soc. A}, 473:20160738.
+\bibitem{AGU}
+	Anderson, O., L., Schreiber, E., Liebermann, R., C., and Soga, H.: 
+	Some elastic constant data on minerals relevant to geophysics, 
+	{\it Review of Geophysics}, Vol.4, No.4, pp.491-524, 1968.
+\bibitem{Kawamura}
+	河村雄行: 分子シミュレーション鉱物学のすすめ，
+	鉱物学雑誌，第28巻，第4号，pp.151-158，1999．
+%\bibitem{Bass}
+%	Bass, J., D.: Elasticity of minerals, glasses, and melts, 
+%	{\im Mineral Physics and Crystallography:A handbook of physical constants }, Vol.2,pp.45-63,  
+\bibitem{Pamel}
+	Pamel, A., V., Sha, G., Rokhlin, S.,I., and Lowe, M.,J.,S.: 
+	Finite-element modelling of elastic wave propagation and scattering within heterogeneous media, 
+	{\it Proc. R. Soc. A}, 473:2016738, 2016.
+\bibitem{Kudo2}
+	工藤洋三, 橋本堅一, 佐野修, 中川浩二:瀬戸内地方の採石場における花崗岩石の異方性, 
+	土木学会論文集, 第382号/III-7, pp.45-53, 1987.
+\newpage
+\bibitem{Sano1}
+	佐野修, 工藤洋三, 河嶋智, 水田義明:異方性体としての花崗岩の弾性率に関する実験的研究, 
+	材料, 第37巻, 第418号, pp.84-90, 1987.
+%\bibitem{Sano2}
+%	佐野修, 民部雅史, 平野亮, 工藤洋三, 水田義明:弾性的対称性未知の岩石の弾性定数決定に関する研究, 
+%	材料, 第40巻, 第449号，pp.96-102, 1990.
+%\bibitem{Nishizawa1996}
+%	西澤修, 雷興林, 佐藤隆司:不均質媒体での地震波伝モデル実験-レーザードップラー速度計を用いた波動計測-
+%	, 地震調査所月報, 第47巻, 第４号, pp.209-222, 1996.
+\bibitem{Sivaji}
+	Sivaji, C., Nishizawa, O., Kitagawa, G., and Fukushima, Y.:A physical-model study of the statistics of seismic waveform fluctuation in random heterogeneous media, 
+	{\it Geophys. J. Int.}, Vol.148, pp.575-595, 2002. 
+\bibitem{Fukushima}
+	Fukushima, Y., Nishizawa, O., Sato, H., and Ohtake, M.:Laboratory study on scattering characteristics of shear waves 
+	in rock samples, {\it Bulltine of Seismological Society of America}, Vol.93, No.1, pp.253-263, 2003.
 \bibitem{Muller}
 	Muller, G., Roth, M. and Korn, M.:Seismic-wave traveltimes in random media,
 	{\it Geophys. J. Int.}, Vol.110, pp.29-41, 1992. 
@@ -170,69 +211,20 @@ This study investigates the propagation characteristics of P-wave in granite. Sp
 \bibitem{Baig}
 	Baig, A., M., and Dahlen, F., A.: Traveltime biases in random media and S-wave discrepancy, 
 	{\it Geophys. J. Int.}, Vol.1158 pp.992-938, 2004. 
-\bibitem{Pamel}
-	Pamel, A., V., Sha, G., Rokhlin, S.,I., and Lowe, M.,J.,S.: 
-	Finite-element modelling of elastic wave propagation and scattering within heterogeneous media, 
-	{\it Proc. R. Soc. A}, 473:2016738, 2016.
-\bibitem{Sato}
-	Sato, H., Fehler, M.C., and Maeda, T.:Seismic wave propagation and scattering in the heterogeneous earth, 
-	Springer, 2012.
-
-\bibitem{RockPhys}
-	ゲガーン, Y., パルシアウスカス, V.: 
-	岩石物性入門, シュプリンガー・ジャパン, 2008. 
-\bibitem{Borcea}
-	Borcea, L.:Imaging with waves in random media, {\it Notices of the American Mathematical Society}, Vol.66, No.11, 
-	pp.1800-1812, 2019.
-\bibitem{Thompson}
-	Thompson, B. R.:Elastic-wave propagation in random polycrystals: 
-	fundamentals and application to nondestructive evaluation, 
-	in Imaging of Complex Media with Acoustic and Seismic Waves, Topics in Applied Physics 84, Springer, pp.233-256, 2002.
-
-\bibitem{Etgen}
-	Etgen, J., Gray, S. H., and Zhang, Y.:An overview of depth imaging in exploration geophysics, 
-	{\it Geophysics}, Vol.74, No.6, pp.WCA5-WCA17, 2009.
-\bibitem{Schmitz}
-	Schmitz, V.:Nondestructive acoustic imaging techniques, in Imaging of Complex Media with Acoustic and Seismic Waves, 
-	Topics in Applied Physics 84, Springer, pp.167-189, 2002.
-\bibitem{Langenberg}
-	Shlivinski, A. and Langenberg, K. J.:Defect imaging with elastic waves in inhomogeneous-anisotropic materials with composite geometries, {\it Ultrasonics}, Vol.46, pp.89-104, 2007.
-\bibitem{Bleistein}
-	Bleistein, N., Cohen, J. K. and Stockwell, Jr. J. W.:Mathematics of multidimensional seismic imaging, migration, and inversion, Springer, pp.220, 2000.
-\bibitem{Yu}
-	Yu, L., Thompson, R. B., Mrgentan, F. J., and Wang, Y.:A Monte-Carlo model for microstructure-induced ultrasonic signal fluctuations in titanium alloy inspections,
-	{\it Review of Progress in Quantitative Nondestructive Evaluation}, Vol.23, pp.1170-1177, 2004.
-\bibitem{Li}
-	Li, A., Roberts, R., Mrgentan, F. J., and Thompson, R. B.:A 2-D numerical simulation study of microstructure-induced  ultrasonic beam distortions,
-	{\it Review of Progress in Quantitative Nondestructive Evaluation}, Vol.23, pp.1178-1186, 2004.
-\bibitem{NishizawaI}
-	西澤修:岩石中の地震波伝播I:不均質媒体のモデル化と弾性波速度, 地学雑誌, 第114巻, 第6号,  pp.921-948,  2005.
-\lastpagecontrol[0.0cm]{9.0cm}
-\newpage
-\bibitem{Nishizawa1996}
-	西澤修, 雷興林, 佐藤隆司:不均質媒体での地震波伝モデル実験-レーザードップラー速度計を用いた波動計測-
-	, 地震調査所月報, 第47巻, 第４号, pp.209-222, 1996.
-\bibitem{Nishizawa2001}
-	西澤修, 雷興林, チャダラム シバジ:不均質媒質での地震波伝播モデル実験, 
-	地震, 第54巻, pp.171-183, 2001.
-\bibitem{Sivaji}
-	Sivaji, C., Nishizawa, O., Kitagawa, G., and Fukushima, Y.:A physical-model study of the statistics of seismic waveform fluctuation in random heterogeneous media, 
-	{\it Geophys. J. Int.}, Vol.148, pp.575-595, 2002. 
-\bibitem{Fukushima}
-	Fukushima, Y., Nishizawa, O., Sato, H., and Ohtake, M.:Laboratory study on scattering characteristics of shear waves 
-	in rock samples, {\it Bulltine of Seismological Society of America}, Vol.93, No.1, pp.253-263, 2003.
+\bibitem{Kimoto}
+	木本和志，岡野蒼，斎藤隆泰，佐藤忠信，松井裕哉: 超音波計測に基づく花崗岩中の表面波伝播特性に関する研究，
+	土木学会応用力学論文集A2(応用力学)，第76巻，第2号，pp.I\_97-I\_108, 2020.
+%\bibitem{RockPhys}
+%	ゲガーン, Y., パルシアウスカス, V.: 
+%	岩石物性入門, シュプリンガー・ジャパン, 2008. 
+%\bibitem{NishizawaI}
+%	西澤修:岩石中の地震波伝播I:不均質媒体のモデル化と弾性波速度, 地学雑誌, 第114巻, 第6号,  pp.921-948,  2005.
+%\bibitem{Nishizawa2001}
+%	西澤修, 雷興林, チャダラム シバジ:不均質媒質での地震波伝播モデル実験, 
+%	地震, 第54巻, pp.171-183, 2001.
 %\bibitem{Okubo2012}
 %	大久保 慎人, 雑賀 敦, 鈴木 貞臣, 中島 唯貴: 地震動観測による地震波速度と岩石物性試験による弾性波速度の関係
 %	-段発発破波形の相関による地震波速度構造推定-: 地震, 第65巻, pp.21-30, 2012.
-\bibitem{Kudo2}
-	工藤洋三, 橋本堅一, 佐野修, 中川浩二:瀬戸内地方の採石場における花崗岩石の異方性, 
-	土木学会論文集, 第382号/III-7, pp.45-53, 1987.
-\bibitem{Sano1}
-	佐野修, 工藤洋三, 河嶋智, 水田義明:異方性体としての花崗岩の弾性率に関する実験的研究, 
-	材料, 第37巻, 第418号, pp.84-90, 1987.
-\bibitem{Sano2}
-	佐野修, 民部雅史, 平野亮, 工藤洋三, 水田義明:弾性的対称性未知の岩石の弾性定数決定に関する研究, 
-	材料, 第40巻, 第449号，pp.96-102, 1990.
 %\bibitem{Rwk_textbook}
 %	Klaffter, J., and Sololov,I.M.,秋元 琢磨(訳): ランダムウォークはじめの一歩，共立出版， 2018．
 \end{spacing}
@@ -242,6 +234,8 @@ This study investigates the propagation characteristics of P-wave in granite. Sp
 	\bf{ (Received June 18, 2021)\\
 	(Accepted November **, 2021)}
 \end{flushright}
+\newpage
+\lastpagecontrol[0.0cm]{18.0cm}
 \end{document}
 
 %\lastpagesettings
